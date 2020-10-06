@@ -5243,7 +5243,6 @@ DOCTEST_CLANG_SUPPRESS_WARNING_POP
             s << "\n";
         }
 
-        // this was requested to be made virtual so users could override it
         virtual void file_line_to_stream(const char* file, int line,
                                         const char* tail = "") {
             s << Color::LightGrey << skipPathFromFilename(file) << (opt.gnu_file_line ? ":" : "(")
